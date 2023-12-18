@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-dcco
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/nbe-e2e-fqrn-tenant/integ-app-ogzd/hacbs-test-project-dcco@sha256:69730b186677a93f396392bc34a7d3b26e336f91bcd0158f5ba98f55a979f2f6
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
